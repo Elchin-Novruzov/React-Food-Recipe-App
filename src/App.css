@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Nanum+Gothic:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 100;
+  font-size: 50px;
+}
+
+.f-banner {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+  background: url('https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto,w_1200,h_630,d_uk:cuisines:gourmetburgers-5.jpg/v1/uk/restaurants/153575.jpg');
+  position: relative;
+}
+
+.f-banner::after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: rgba(0, 0, 0, 0.383);
+  position: absolute;
+  top: 0;
+}
+
+.f-banner .f-item {
+  position: relative;
+  z-index: 100;
+}
+
+.f-banner .f-item input {
+  width: 400px;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  background: #E67E22;
+  outline: none;
+}
+
+.f-banner .f-item input::placeholder {
+  color: #fff;
+}
+
+.cards {
+  max-width: 1400px;
+  padding: 0 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.card .card-container .card-row .card-item {
+  display: flex;
+  background: #edeeef;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.card .card-container .card-row .card-item .card-bottom {
+  padding-left: 20px;
+}
+
+.card .card-container .card-row .card-item .food-name {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.not {
+  margin: 0 auto;
+}
+
+.card .card-container .card-row .card-item .food-location {
+  font-size: 23px;
+  margin-top: 2px;
+}
+
+.card .card-container .card-row .card-item .title {
+  margin-top: 20px;
+  border: 2px solid #297fb941;
+  border-radius: 20px;
+  padding: 15px;
+  max-height: 250px;
+  overflow: auto;
+}
+
+.card .card-container .card-row .card-item img {
+  max-width: 300px;
+  height: 400px;
+  object-fit: contain;
+  margin-left: -50px;
+  border-radius: 20px;
+}
+
+
+@media only screen and (max-width:1300px) {
+  .card .card-container .card-row .card-item {
+    width: 520px;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  .card .card-container .card-row .card-item img {
+    width: 250px;
+  }
+
+  .card .card-container .card-row .card-item {
+    width: 460px;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  .cards {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .card .card-container .card-row .card-item {
+    width: 100%;
+  }
+
+  .card .card-container .card-row {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:578px) {
+  .f-banner {
+    background-size: contain;
+    height: 240px !important;
+  }
+
+  h1 {
+    line-height: 38px;
+    font-size: 35px;
+
+    padding: 0;
+    margin-bottom: 18px;
+  }
+
+  .f-banner {
+    height: 300px;
+  }
+
+  .cards {
+    padding: 0 25px;
+  }
+
+  .card-bottom {
+    padding: 0px !important;
+  }
+
+  .f-banner .f-item input {
+    max-width: 300px;
+  }
+
+  .card .card-container .card-row .card-item img {
+    margin-top: 5px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .card .card-container .card-row .card-item {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .card .card-container .card-row .card-item {
+    width: 100%;
+  }
+
+  .card .card-container .card-row .card-item .food-name {
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .card .card-container .card-row .card-item .food-location {
+    font-size: 23px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.214);
+    padding-bottom: 10px;
+  }
+
+  .card .card-container .card-row .card-item .title {
+    font-size: 15px;
+    max-height: 160px;
+  }
+}
